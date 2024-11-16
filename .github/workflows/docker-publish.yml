@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/vitaliystrunin/lab_2_repository:latest .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/lab_2_repository:latest .
 
     - name: Push Docker image to DockerHub
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/vitaliystrunin/lab_2_repository:latest
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/lab_2_repository:latest
